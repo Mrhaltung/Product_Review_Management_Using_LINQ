@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Data;
 using System.Collections.Generic;
 
 namespace Product_Review_Management_Using_LINQ
@@ -10,7 +9,7 @@ namespace Product_Review_Management_Using_LINQ
         {
             Console.WriteLine("*****Product Review Management Program*****\n");
 
-            List<ProductReview> productReviewlist = new List<ProductReview>()
+            List<ProductReview> productlist = new List<ProductReview>()
             {
                 new ProductReview() { ProductId = 1, UserId = 1, Rating = 4.9, Review = "Excelent", isLike = true },
                 new ProductReview() { ProductId = 1, UserId = 1, Rating = 4.9, Review = "Excelent", isLike = true },
@@ -38,11 +37,20 @@ namespace Product_Review_Management_Using_LINQ
                 new ProductReview() { ProductId = 9, UserId = 3, Rating = 4.5, Review = "VeryGood", isLike = true },
                 new ProductReview() { ProductId = 4, UserId = 5, Rating = 4.1, Review = "Good    ", isLike = true }
             };
-           
-            foreach (var list in productReviewlist)
+
+            foreach (var list in productlist)
             {
                 Console.WriteLine("Product Id : " + list.ProductId + " || User Id : " + list.UserId + " || Rating : " + list.Rating + " || Review : " + list.Review + " || Is Like : " + list.isLike);
             }
+            Console.WriteLine("------------------------------------------------------------------------------------------------");
+
+            Management management = new Management();
+
+            management.RetrieveTop3Records(productlist);
+
+            Console.WriteLine("------------------------------------------------------------------------------------------------");
+
+
         }
     }
 }
