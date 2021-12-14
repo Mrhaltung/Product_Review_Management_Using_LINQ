@@ -42,13 +42,13 @@ namespace Product_Review_Management_Using_LINQ
             {
                 Console.WriteLine("Product Id : " + list.ProductId + " || User Id : " + list.UserId + " || Rating : " + list.Rating + " || Review : " + list.Review + " || Is Like : " + list.isLike);
             }
-            Console.WriteLine("------------------------------------------------------------------------------------------------");
+            Console.WriteLine("\n------------------------------------------------------------------------------------------------ \n Retrieve Top 3 Records from list \n");
 
             Management management = new Management();
 
             management.RetrieveTop3Records(productlist);
 
-            Console.WriteLine("------------------------------------------------------------------------------------------------");
+            Console.WriteLine("\n------------------------------------------------------------------------------------------------");
 
 
         }
