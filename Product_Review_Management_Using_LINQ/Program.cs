@@ -42,11 +42,11 @@ namespace Product_Review_Management_Using_LINQ
             {
                 Console.WriteLine("Product Id : " + list.ProductId + " || User Id : " + list.UserId + " || Rating : " + list.Rating + " || Review : " + list.Review + " || Is Like : " + list.isLike);
             }
-            Console.WriteLine("\n------------------------------------------------------------------------------------------------ \n Retrieve ProductId Where values isLike is True \n");
+            Console.WriteLine("\n------------------------------------------------------------------------------------------------ \n Retrieve ProductId And Average of Rating \n");
 
             Management management = new Management();
 
-            management.RetrieveProductIdLike(productlist);
+            management.RetrieveAverage(productlist);
 
             Console.WriteLine("\n------------------------------------------------------------------------------------------------");
 
