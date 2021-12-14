@@ -42,11 +42,11 @@ namespace Product_Review_Management_Using_LINQ
             {
                 Console.WriteLine("Product Id : " + list.ProductId + " || User Id : " + list.UserId + " || Rating : " + list.Rating + " || Review : " + list.Review + " || Is Like : " + list.isLike);
             }
-            Console.WriteLine("\n------------------------------------------------------------------------------------------------ \n Retrieve Data Rating are Greater then 3 and ProductId is 1, 4, 9 \n");
+            Console.WriteLine("\n------------------------------------------------------------------------------------------------ \n Retrieve Count Of Review For Each ProductId \n");
 
             Management management = new Management();
 
-            management.RetrieveRecordsWithGreaterThanThreeRating(productlist);
+            management.RetrieveCountOfReviewForEachProductId(productlist);
 
             Console.WriteLine("\n------------------------------------------------------------------------------------------------");
             Console.ReadLine();
