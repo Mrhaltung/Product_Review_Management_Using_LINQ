@@ -38,17 +38,21 @@ namespace Product_Review_Management_Using_LINQ
                 new ProductReview() { ProductId = 4, UserId = 5, Rating = 4.1, Review = "Good    ", isLike = true }
             };
 
-            foreach (var list in productlist)
-            {
-                Console.WriteLine("Product Id : " + list.ProductId + " || User Id : " + list.UserId + " || Rating : " + list.Rating + " || Review : " + list.Review + " || Is Like : " + list.isLike);
-            }
-            Console.WriteLine("\n------------------------------------------------------------------------------------------------ \n Retrieve ProductId And Review Using Select \n");
+            //foreach (var list in productlist)
+            //{
+            //    Console.WriteLine("Product Id : " + list.ProductId + " || User Id : " + list.UserId + " || Rating : " + list.Rating + " || Review : " + list.Review + " || Is Like : " + list.isLike);
+            //}
+            //Console.WriteLine("\n------------------------------------------------------------------------------------------------ \n Retrieve ProductId And Review Using Select \n");
 
-            Management management = new Management();
+            //Management management = new Management();
 
-            management.RetrieveProductIdAndReviewUsingSelect(productlist);
+            //management.RetrieveProductIdAndReviewUsingSelect(productlist);
 
-            Console.WriteLine("\n------------------------------------------------------------------------------------------------");
+            //Console.WriteLine("\n------------------------------------------------------------------------------------------------");
+
+            DataTable records = new DataTable();
+
+            records.AddDataIntoDataTable();
         }
     }
 }
